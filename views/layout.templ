@@ -1,0 +1,17 @@
+package views
+
+templ Head() {
+    <head>
+        <link rel="stylesheet" href="/static/output.css" />
+    </head>
+}
+
+templ Layout(){
+    <!DOCTYPE html>
+    <html>
+        @Head()
+        <body>
+            { children... }
+        </body>
+    </html>
+}
